@@ -1,6 +1,6 @@
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../auth/AuthContext.jsx";
 
-export function RoleGate({ requiredRole, children }) {
+export default function RoleGate({ requiredRole, children }) {
   const { user } = useAuth();
 
   if (user?.role !== requiredRole) {

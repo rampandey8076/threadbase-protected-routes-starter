@@ -10,14 +10,13 @@
 // ────────────────────────────────────────────────────────────
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
-import PrivateRoute from "./components/PrivateRoute.jsx";
+import { PrivateRoute } from "./components/PrivateRoute.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import ThreadsPage from "./pages/ThreadsPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import ProfilePage from "./pages/ProfilePage.jsx";
 import NewThreadPage from "./pages/NewThreadPage.jsx";
-import { PrivateRoute } from "./components/PrivateRoute";
 
 export default function App() {
   return (
