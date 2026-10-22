@@ -22,10 +22,17 @@ export default function ThreadItem({ thread }) {
       <p>{thread.body}</p>
       <p className="byline">by {thread.authorName}</p>
       {canEdit && (
-        <div className="controls">
-          <button>Edit</button>
-          <button className="danger">Delete</button>
-        </div>
+        {canEdit && (
+
+          <div className="controls">
+
+            <button>Edit</button>
+
+            <button>Delete</button>
+
+          </div>
+
+        )}
       )}
     </article>
   );
